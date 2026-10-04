@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Œuvre — Toile Virtuelle</title>
+
+    <link rel="stylesheet" href="artwork.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            Toile <span>virtuelle</span>
+        </a>
+
+        <nav class="navigation">
+
+            <a href="index.html">Accueil</a>
+            <a href="#">Galerie</a>
+            <a href="#">À propos</a>
+
+            <button class="sound-button">
+                <span>◉</span>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENU -->
+
+    <main class="artwork-page">
+
+        <!-- RETOUR -->
+
+        <a href="index.html" class="back">
+            ← Retour
+        </a>
+
+
+        <!-- CONTENEUR -->
+
+        <section class="artwork-content">
+
+
+            <!-- CADRE -->
+
+            <div class="artwork-frame" id="artworkFrame">
+
+                <div class="empty-artwork" id="emptyArtwork">
+                    Cliquer pour ajouter une œuvre
+                </div>
+
+            </div>
+
+
+            <!-- INFORMATIONS -->
+
+            <div class="artwork-info">
+
+                <h1>Titre de l'œuvre</h1>
+
+                <p class="artist">
+                    Artiste
+                </p>
+
+                <p class="details">
+                    Détails de l'œuvre
+                </p>
+
+
+                <!-- BOUTON ENREGISTRER -->
+
+                <button
+                    class="save-button"
+                    id="saveButton"
+                    style="display: none;"
+                >
+                    Enregistrer
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- SÉLECTEUR DE FICHIER -->
+
+    <input
+        type="file"
+        id="artworkInput"
+        accept="image/*"
+        style="display: none;"
+    >
+
+
+    <script src="artwork.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f1ec;
+    color: #1c1c1b;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 78px;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(28, 28, 27, 0.15);
+}
+
+.logo {
+    color: #1c1c1b;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+}
+
+.logo span {
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navigation a {
+    color: #1c1c1b;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.sound-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(28, 28, 27, 0.35);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.artwork-page {
+    width: 92%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.back {
+    display: inline-block;
+    color: #1c1c1b;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CONTENU
+========================= */
+
+.artwork-content {
+    border: 1px solid rgba(28, 28, 27, 0.8);
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 50px;
+    min-height: 520px;
+}
+
+
+/* =========================
+   CADRE
+========================= */
+
+.artwork-frame {
+    border: 1px solid #1c1c1b;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    overflow: hidden;
+}
+
+.artwork-frame:hover {
+    background: rgba(28, 28, 27, 0.035);
+}
+
+.empty-artwork {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #777;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.artwork-frame:hover .empty-artwork {
+    opacity: 1;
+}
+
+
+/* =========================
+   IMAGE DE L'ŒUVRE
+========================= */
+
+.artwork-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* =========================
+   INFORMATIONS
+========================= */
+
+.artwork-info {
+    padding: 20px 10px;
+}
+
+.artwork-info h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.artist {
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.details {
+    font-size: 14px;
+    color: #666;
+}
+
+.save-button {
+    margin-top: 40px;
+    padding: 12px 25px;
+
+    border: 1px solid #1c1c1b;
+
+    background: #1c1c1b;
+    color: #f3f1ec;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.save-button:hover {
+    background: transparent;
+    color: #1c1c1b;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .artwork-content {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation {
+        gap: 15px;
+    }
+}
