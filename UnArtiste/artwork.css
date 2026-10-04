@@ -7,13 +7,11 @@
 body {
     background: #f3f1ec;
     color: #1c1c1b;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Instrument Sans", sans-serif;
 }
 
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 .header {
     height: 78px;
@@ -27,12 +25,12 @@ body {
 .logo {
     color: #1c1c1b;
     text-decoration: none;
-    font-family: "Playfair Display", serif;
+    font-family: "Instrument Serif", serif;
     font-size: 22px;
 }
 
 .logo span {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Instrument Serif", sans-serif;
     font-size: 11px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -60,9 +58,7 @@ body {
 }
 
 
-/* =========================
-   PAGE
-========================= */
+/* PAGE*/
 
 .artwork-page {
     width: 92%;
@@ -80,9 +76,7 @@ body {
 }
 
 
-/* =========================
-   CONTENU
-========================= */
+/* CONTENU*/
 
 .artwork-content {
     border: 1px solid rgba(28, 28, 27, 0.8);
@@ -94,9 +88,7 @@ body {
 }
 
 
-/* =========================
-   CADRE
-========================= */
+/* CADRE*/
 
 .artwork-frame {
     border: 1px solid #1c1c1b;
@@ -126,9 +118,7 @@ body {
 }
 
 
-/* =========================
-   IMAGE DE L'ŒUVRE
-========================= */
+/* IMAGE DE L'ŒUVRE*/
 
 .artwork-image {
     width: 100%;
@@ -138,16 +128,14 @@ body {
 }
 
 
-/* =========================
-   INFORMATIONS
-========================= */
+/* INFORMATIONS*/
 
 .artwork-info {
     padding: 20px 10px;
 }
 
 .artwork-info h1 {
-    font-family: "Playfair Display", serif;
+    font-family: "Instrument Sans", serif;
     font-size: 38px;
     font-weight: 400;
     margin-bottom: 25px;
@@ -172,7 +160,7 @@ body {
     background: #1c1c1b;
     color: #f3f1ec;
 
-    font-family: "DM Sans", sans-serif;
+    font-family: "Instrument Sans", sans-serif;
     font-size: 13px;
 
     cursor: pointer;
@@ -185,9 +173,7 @@ body {
     color: #1c1c1b;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE*/
 
 @media (max-width: 800px) {
 
